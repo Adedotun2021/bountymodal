@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounty Modal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .modal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        .modal-content {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        p {
+            margin: 1em 0;
+        }
+        pre {
+            background: #f4f4f4;
+            border-left: 4px solid #ccc;
+            padding: 10px;
+            overflow-x: auto;
+            margin: 1em 0;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 1em 0;
+        }
+        ol {
+            padding-left: 20px;
+            margin: 1em 0;
+        }
+        li {
+            margin: 0.5em 0;
+        }
+        .close-button {
+            background: #ff5e57;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+        .close-button:hover {
+            background: #ff3b30;
+        }
+    </style>
+</head>
+<body>
+
+<div class="modal">
+    <div class="modal-content">
+        <button class="close-button">Close</button>
+        <h1>Bounty Modal Example</h1>
+        <p>This modal demonstrates how Markdown content is rendered with proper formatting for paragraphs, headers, code blocks, and lists.</p>
+
+        <h2>Headers</h2>
+        <h3>Sub-header Example</h3>
+        <p>Headers use <code>h1</code> through <code>h6</code> tags, allowing different levels of emphasis.</p>
+
+        <h2>Paragraphs</h2>
+        <p>Paragraphs are separated by a blank line and contain blocks of text with consistent spacing.</p>
+        <p>Ensure readability by keeping paragraphs concise and visually distinct.</p>
+
+        <h2>Code Blocks</h2>
+        <p>Inline code can be represented with backticks: <code>example_code()</code>.</p>
+        <pre><code>function exampleCode() {
+    console.log("This is a code block example.");
+}
+        </code></pre>
+
+        <h2>Lists</h2>
+        <p>Unordered lists use bullet points:</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <p>Ordered lists use numbers:</p>
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+
+        <h2>Conclusion</h2>
+        <p>This modal ensures clear rendering of various Markdown elements, enhancing user readability and usability.</p>
+    </div>
+</div>
+
+</body>
+</html>
